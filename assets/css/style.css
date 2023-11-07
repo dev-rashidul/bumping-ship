@@ -1,0 +1,415 @@
+/* Base Style CSS Start */
+
+/* Fonts */
+
+/* Rubik Font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+
+/* SF Compact Font */
+
+@font-face {
+  font-family: "SF-Compact";
+  src: url(../font/SF-Compact-Light.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "SF-Compact";
+  src: url(../font/SF-Compact-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SF-Compact";
+  src: url(../font/SF-Compact-Medium.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SF-Compact";
+  src: url(../font/SF-Compact-Semibold.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SF-Compact";
+  src: url(../font/SF-Compact-Bold.otf);
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-family: "SF-Compact";
+  background: #000000;
+  scroll-behavior: smooth;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Base Style CSS End */
+
+/* Sidebar Section CSS Start */
+
+#Sidebar {
+  width: 275px;
+}
+
+.sidebar {
+  width: 275px;
+  min-height: 100vh;
+  height: 100%;
+  position: fixed;
+  padding: 0 15px;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.main-logo {
+  padding: 30px 0;
+}
+
+.sidebar-menu {
+  width: 100%;
+  padding-top: 30px;
+  background: #151515;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.sidebar-menu .item {
+  position: relative;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.sidebar-menu .item a {
+  padding: 5px 14px;
+}
+
+.sidebar-menu a.active {
+  background: #5228de;
+}
+
+.menu-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  margin-right: 16px;
+  border-radius: 100%;
+}
+
+.sidebar-menu .active .menu-icon {
+  background: #5228de;
+}
+
+.sidebar-menu .item a {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #fff;
+}
+
+.sidebar-menu .item a .dropdown {
+  position: absolute;
+  right: 0;
+  margin-right: 14px;
+  transition: 0.3s ease;
+}
+
+.sidebar-menu .item .sub-menu {
+  display: none;
+}
+
+.sidebar-menu .item .sub-menu ul {
+  position: relative;
+  padding-left: 60px;
+  margin: 10px 0;
+}
+
+.sidebar-menu .item .sub-menu ul::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 60px;
+  width: 1px;
+  height: 100%;
+  background: #6f6f6f;
+}
+
+.sidebar-menu .item .sub-menu li {
+  position: relative;
+  padding: 5px;
+}
+
+.sidebar-menu .item .sub-menu li::before {
+  position: absolute;
+  content: "";
+  top: 17px;
+  left: 0;
+  width: 12px;
+  height: 1px;
+  background: #6f6f6f;
+}
+
+.sidebar-menu .item .sub-menu a {
+  font-size: 14px;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+/* Sidebar Section CSS End */
+
+.main-container {
+  display: flex;
+}
+
+#Main-content {
+  width: calc(100% - 250px);
+  min-height: 100vh;
+  height: 100%;
+  background: #ffffff;
+  padding: 30px 40px 30px 30px;
+  border-radius: 16px 0px 0px 16px;
+}
+
+/* Header Section CSS Start */
+
+.header-search {
+  max-width: 420px;
+  width: 100%;
+  background: #f5f8f9;
+  padding: 0 20px;
+  border-radius: 15px;
+}
+
+.header-search input {
+  max-width: 85%;
+  width: 100%;
+  padding: 15px 0;
+  background: transparent;
+  border: none;
+}
+
+.header-search input:focus {
+  outline: 0;
+}
+
+.header-search ::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #919191;
+}
+
+.header-search button {
+  background: transparent;
+  border: none;
+}
+
+.header-menu ul li {
+  padding-left: 12px;
+}
+
+.new-label-btn {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  background: #5228de;
+  padding: 17px 26px;
+  border-radius: 50px;
+}
+
+.bal-btn {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  background: #19acff;
+  padding: 17px 26px;
+  border: 1px solid #19acff;
+  border-radius: 50px;
+}
+
+.switch-btn,
+.notification-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  height: 54px;
+  background: #f5f8f9;
+  border-radius: 100%;
+}
+
+/* Header Section CSS End */
+
+/* Order History Section CSS Start */
+
+.order-wrapper {
+  padding-top: 30px;
+}
+
+.order-top h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #151515;
+}
+
+.order-search {
+  max-width: 420px;
+  width: 100%;
+  padding: 0 20px;
+  border: 1px solid #919191;
+  border-radius: 15px;
+}
+
+.order-search input {
+  max-width: 85%;
+  width: 100%;
+  padding: 15px 0;
+  background: transparent;
+  border: none;
+}
+
+.order-search input:focus {
+  outline: 0;
+}
+
+.order-search button {
+  width: 15px;
+  background: transparent;
+  border: none;
+}
+
+.order-search ::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #919191;
+}
+
+.donwload-bulk-btn a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5228de;
+  padding: 18px 30px;
+  border: 1px solid #5228de;
+  border-radius: 12px;
+}
+
+.order-history-date-filter select {
+  width: 280px;
+  padding: 17px;
+  color: #919191;
+  background: transparent;
+  border: 1px solid #919191;
+  border-radius: 12px;
+}
+
+.order-history-date-filter select:focus {
+  outline: 0;
+}
+
+.order-history-table {
+  padding-top: 25px;
+}
+
+.order-history-table table {
+  width: 100%;
+}
+
+.order-history-table thead {
+  width: 100%;
+  background: #5228de;
+}
+
+.order-history-table thead th {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 18px 0;
+  color: #fff;
+}
+
+.order-history-table thead th:first-child {
+  padding-left: 16px;
+}
+
+.order-history-table thead th input[type="checkbox"] {
+  background: transparent;
+}
+
+.order-history-table tbody tr {
+  background: #f5f8f9;
+  border-bottom: 1px solid #541cd9;
+}
+
+.order-history-table tbody tr td {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5c5c5c;
+  padding: 16px 0;
+  margin-bottom: 100px;
+}
+
+.order-history-table tbody tr td:first-child {
+  padding-left: 16px;
+}
+
+.order-history-pagination {
+  padding-top: 20px;
+}
+
+.order-history-pagination ul li {
+  font-size: 16px;
+  font-weight: 400;
+  color: #919191;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.order-history-pagination ul li.active {
+  color: #5228de;
+}
+
+.order-history-pagination ul li .pagination-arrow {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #5228de;
+  border-radius: 10px;
+}
+
+/* Order History Section CSS End */

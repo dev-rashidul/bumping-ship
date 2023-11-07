@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bumping Ship - Order History</title>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Main Section HTML Start -->
+
+    <section id="Main">
+      <div class="main-wrapper">
+        <div class="main-container">
+          <!-- Sidebar HTML Start -->
+
+          <div id="Sidebar">
+            <div class="sidebar">
+              <div class="main-logo text-center">
+                <img src="assets/images/main-logo.svg" alt="main-logo" />
+              </div>
+              <div class="sidebar-menu">
+                <ul>
+                  <li class="item">
+                    <a class="sub-btn d-flex align-items-center"
+                      ><div class="menu-icon">
+                        <img
+                          src="assets/images/general-icon.svg"
+                          alt="general-icon"
+                        />
+                      </div>
+                      General<i class="fas fa-angle-right dropdown"></i
+                    ></a>
+                    <div class="sub-menu">
+                      <ul>
+                        <li><a href="#" class="sub-item">Create Label</a></li>
+                        <li>
+                          <a href="#" class="sub-item">Order History</a>
+                        </li>
+                        <li><a href="#" class="sub-item">Import CVS</a></li>
+                        <li><a href="#" class="sub-item">Address Book</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <a class="sub-btn d-flex align-items-center"
+                      ><div class="menu-icon">
+                        <img
+                          src="assets/images/management-icon.svg"
+                          alt="management-icon"
+                        />
+                      </div>
+                      Management<i class="fas fa-angle-right dropdown"></i
+                    ></a>
+                    <div class="sub-menu">
+                      <ul>
+                        <li><a href="#" class="sub-item">Create Label</a></li>
+                        <li>
+                          <a href="#" class="sub-item">Order History</a>
+                        </li>
+                        <li><a href="#" class="sub-item">Import CVS</a></li>
+                        <li><a href="#" class="sub-item">Address Book</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <a class="sub-btn d-flex align-items-center"
+                      ><div class="menu-icon">
+                        <img
+                          src="assets/images/transaction-icon.svg"
+                          alt="transaction-icon"
+                        />
+                      </div>
+                      Transactions<i class="fas fa-angle-right dropdown"></i
+                    ></a>
+                    <div class="sub-menu">
+                      <ul>
+                        <li><a href="#" class="sub-item">Create Label</a></li>
+                        <li>
+                          <a href="#" class="sub-item">Order History</a>
+                        </li>
+                        <li><a href="#" class="sub-item">Import CVS</a></li>
+                        <li><a href="#" class="sub-item">Address Book</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <a class="sub-btn d-flex align-items-center"
+                      ><div class="menu-icon">
+                        <img
+                          src="assets/images/developer-icon.svg"
+                          alt="developer-icon"
+                        />
+                      </div>
+                      Developer<i class="fas fa-angle-right dropdown"></i
+                    ></a>
+                    <div class="sub-menu">
+                      <ul>
+                        <li><a href="#" class="sub-item">Create Label</a></li>
+                        <li>
+                          <a href="#" class="sub-item">Order History</a>
+                        </li>
+                        <li><a href="#" class="sub-item">Import CVS</a></li>
+                        <li><a href="#" class="sub-item">Address Book</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <a class="sub-btn d-flex align-items-center"
+                      ><div class="menu-icon">
+                        <img
+                          src="assets/images/promotion-icon.svg"
+                          alt="promotion-icon"
+                        />
+                      </div>
+                      Promotion<i class="fas fa-angle-right dropdown"></i
+                    ></a>
+                    <div class="sub-menu">
+                      <ul>
+                        <li><a href="#" class="sub-item">Create Label</a></li>
+                        <li>
+                          <a href="#" class="sub-item">Order History</a>
+                        </li>
+                        <li><a href="#" class="sub-item">Import CVS</a></li>
+                        <li><a href="#" class="sub-item">Address Book</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar HTML End -->
+
+          <!-- Main Content HTML Start -->
+
+          <section id="Main-content">
+            <div class="main-content">
+              <!-- Header Section HTML Start -->
+
+              <section id="Header">
+                <div class="header-wrapper">
+                  <div
+                    class="header-container d-flex justify-content-between align-items-center"
+                  >
+                    <div
+                      class="header-search d-flex justify-content-between align-items-center"
+                    >
+                      <input type="text" placeholder="Search Here" />
+                      <button>
+                        <img
+                          src="assets/images/search-icon.svg"
+                          alt="search-icon"
+                        />
+                      </button>
+                    </div>
+                    <div class="header-menu">
+                      <ul class="d-flex align-items-center">
+                        <li>
+                          <a class="new-label-btn" href="#"
+                            >Create New Labels</a
+                          >
+                        </li>
+                        <li>
+                          <a class="bal-btn" href="#"
+                            >Bal:- <span>$100.00</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="switch-btn" href="#"
+                            ><img
+                              src="assets/images/light-icon.svg"
+                              alt="light-icon"
+                          /></a>
+                        </li>
+                        <li>
+                          <a class="notification-btn" href="#"
+                            ><img
+                              src="assets/images/notification-icon.svg"
+                              alt="notification-icon"
+                          /></a>
+                        </li>
+                        <li>
+                          <a class="user-btn" href="#"
+                            ><img
+                              src="assets/images/user-profile.svg"
+                              alt="user-profile"
+                          /></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Header Section HTML End -->
+
+              <!-- Order Section HTML Start -->
+
+              <section id="Order">
+                <div class="order-wrapper">
+                  <div class="order-top">
+                    <h5>Order History</h5>
+                    <div
+                      class="order-top-info d-flex justify-content-between align-items-center"
+                    >
+                      <div
+                        class="order-search d-flex justify-content-between align-items-center"
+                      >
+                        <input
+                          type="text"
+                          placeholder="Search By ID, To Name, From Name.."
+                        />
+                        <button>
+                          <img
+                            src="assets/images/search-icon.svg"
+                            alt="search-icon"
+                          />
+                        </button>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <div class="donwload-bulk-btn">
+                          <a href="#">Download In Bulk</a>
+                        </div>
+                        <div class="order-history-date-filter ps-3">
+                          <select>
+                            <option value="Sep 18,2023 - Oct 18,2023">
+                              Sep 18,2023 - Oct 18,2023
+                            </option>
+                            <option value="Oct 18,2023 - Nov 18,2023">
+                              Oct 18,2023 - Nov 18,2023
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="order-history-table">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>
+                            <input type="checkbox" />
+                          </th>
+                          <th><span class="hashtag">#</span></th>
+                          <th>Tracking ID</th>
+                          <th>Type</th>
+                          <th>Class</th>
+                          <th>From</th>
+                          <th>To</th>
+                          <th>Price</th>
+                          <th>Status</th>
+                          <th>Added</th>
+                          <th>Weight</th>
+                          <th>
+                            <img
+                              src="assets/images/reset-icon.svg"
+                              alt="reset-icon"
+                            />
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><input type="checkbox" /></td>
+                          <td>1234</td>
+                          <td>
+                            1Z87Y9F7016....
+                            <img
+                              src="assets/images/copy-icon.svg"
+                              alt="copy-icon"
+                            />
+                          </td>
+                          <td>
+                            <img
+                              src="assets/images/ups-icon.svg"
+                              alt="ups-icon"
+                            />
+                          </td>
+                          <td>Next Day Air</td>
+                          <td>Alison Smith</td>
+                          <td>Steve Smith</td>
+                          <td>$ <span>12.00</span></td>
+                          <td>
+                            <img
+                              src="assets/images/check-icon.svg"
+                              alt="check-icon"
+                            />
+                          </td>
+                          <td>10 - 17 - 2023</td>
+                          <td><span>50</span> LB</td>
+                          <td>
+                            <img
+                              src="assets/images/3dot-icon.svg"
+                              alt="3dot-icon"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" /></td>
+                          <td>1234</td>
+                          <td>
+                            1Z87Y9F7016....
+                            <img
+                              src="assets/images/copy-icon.svg"
+                              alt="copy-icon"
+                            />
+                          </td>
+                          <td>
+                            <img
+                              src="assets/images/ups-icon.svg"
+                              alt="ups-icon"
+                            />
+                          </td>
+                          <td>Next Day Air</td>
+                          <td>Alison Smith</td>
+                          <td>Steve Smith</td>
+                          <td>$ <span>12.00</span></td>
+                          <td>
+                            <img
+                              src="assets/images/cross-icon.svg"
+                              alt="cross-icon"
+                            />
+                          </td>
+                          <td>10 - 17 - 2023</td>
+                          <td><span>50</span> LB</td>
+                          <td>
+                            <img
+                              src="assets/images/3dot-icon.svg"
+                              alt="3dot-icon"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" /></td>
+                          <td>1234</td>
+                          <td>
+                            1Z87Y9F7016....
+                            <img
+                              src="assets/images/copy-icon.svg"
+                              alt="copy-icon"
+                            />
+                          </td>
+                          <td>
+                            <img
+                              src="assets/images/us-postal-service-icon.svg"
+                              alt="us-postal-service-icon"
+                            />
+                          </td>
+                          <td>Next Day Air</td>
+                          <td>Alison Smith</td>
+                          <td>Steve Smith</td>
+                          <td>$ <span>12.00</span></td>
+                          <td>
+                            <img
+                              src="assets/images/pending-icon.svg"
+                              alt="pending-icon"
+                            />
+                          </td>
+                          <td>10 - 17 - 2023</td>
+                          <td><span>50</span> LB</td>
+                          <td>
+                            <img
+                              src="assets/images/3dot-icon.svg"
+                              alt="3dot-icon"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" /></td>
+                          <td>1234</td>
+                          <td>
+                            1Z87Y9F7016....
+                            <img
+                              src="assets/images/copy-icon.svg"
+                              alt="copy-icon"
+                            />
+                          </td>
+                          <td>
+                            <img
+                              src="assets/images/ups-icon.svg"
+                              alt="ups-icon"
+                            />
+                          </td>
+                          <td>Next Day Air</td>
+                          <td>Alison Smith</td>
+                          <td>Steve Smith</td>
+                          <td>$ <span>12.00</span></td>
+                          <td>
+                            <img
+                              src="assets/images/check-icon.svg"
+                              alt="check-icon"
+                            />
+                          </td>
+                          <td>10 - 17 - 2023</td>
+                          <td><span>50</span> LB</td>
+                          <td>
+                            <img
+                              src="assets/images/3dot-icon.svg"
+                              alt="3dot-icon"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" /></td>
+                          <td>1234</td>
+                          <td>
+                            1Z87Y9F7016....
+                            <img
+                              src="assets/images/copy-icon.svg"
+                              alt="copy-icon"
+                            />
+                          </td>
+                          <td>
+                            <img
+                              src="assets/images/ups-icon.svg"
+                              alt="ups-icon"
+                            />
+                          </td>
+                          <td>Next Day Air</td>
+                          <td>Alison Smith</td>
+                          <td>Steve Smith</td>
+                          <td>$ <span>12.00</span></td>
+                          <td>
+                            <img
+                              src="assets/images/cross-icon.svg"
+                              alt="cross-icon"
+                            />
+                          </td>
+                          <td>10 - 17 - 2023</td>
+                          <td><span>50</span> LB</td>
+                          <td>
+                            <img
+                              src="assets/images/3dot-icon.svg"
+                              alt="3dot-icon"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" /></td>
+                          <td>1234</td>
+                          <td>
+                            1Z87Y9F7016....
+                            <img
+                              src="assets/images/copy-icon.svg"
+                              alt="copy-icon"
+                            />
+                          </td>
+                          <td>
+                            <img
+                              src="assets/images/us-postal-service-icon.svg"
+                              alt="us-postal-service-icon"
+                            />
+                          </td>
+                          <td>Next Day Air</td>
+                          <td>Alison Smith</td>
+                          <td>Steve Smith</td>
+                          <td>$ <span>12.00</span></td>
+                          <td>
+                            <img
+                              src="assets/images/pending-icon.svg"
+                              alt="pending-icon"
+                            />
+                          </td>
+                          <td>10 - 17 - 2023</td>
+                          <td><span>50</span> LB</td>
+                          <td>
+                            <img
+                              src="assets/images/3dot-icon.svg"
+                              alt="3dot-icon"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" /></td>
+                          <td>1234</td>
+                          <td>
+                            1Z87Y9F7016....
+                            <img
+                              src="assets/images/copy-icon.svg"
+                              alt="copy-icon"
+                            />
+                          </td>
+                          <td>
+                            <img
+                              src="assets/images/ups-icon.svg"
+                              alt="ups-icon"
+                            />
+                          </td>
+                          <td>Next Day Air</td>
+                          <td>Alison Smith</td>
+                          <td>Steve Smith</td>
+                          <td>$ <span>12.00</span></td>
+                          <td>
+                            <img
+                              src="assets/images/check-icon.svg"
+                              alt="check-icon"
+                            />
+                          </td>
+                          <td>10 - 17 - 2023</td>
+                          <td><span>50</span> LB</td>
+                          <td>
+                            <img
+                              src="assets/images/3dot-icon.svg"
+                              alt="3dot-icon"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" /></td>
+                          <td>1234</td>
+                          <td>
+                            1Z87Y9F7016....
+                            <img
+                              src="assets/images/copy-icon.svg"
+                              alt="copy-icon"
+                            />
+                          </td>
+                          <td>
+                            <img
+                              src="assets/images/ups-icon.svg"
+                              alt="ups-icon"
+                            />
+                          </td>
+                          <td>Next Day Air</td>
+                          <td>Alison Smith</td>
+                          <td>Steve Smith</td>
+                          <td>$ <span>12.00</span></td>
+                          <td>
+                            <img
+                              src="assets/images/cross-icon.svg"
+                              alt="cross-icon"
+                            />
+                          </td>
+                          <td>10 - 17 - 2023</td>
+                          <td><span>50</span> LB</td>
+                          <td>
+                            <img
+                              src="assets/images/3dot-icon.svg"
+                              alt="3dot-icon"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" /></td>
+                          <td>1234</td>
+                          <td>
+                            1Z87Y9F7016....
+                            <img
+                              src="assets/images/copy-icon.svg"
+                              alt="copy-icon"
+                            />
+                          </td>
+                          <td>
+                            <img
+                              src="assets/images/us-postal-service-icon.svg"
+                              alt="us-postal-service-icon"
+                            />
+                          </td>
+                          <td>Next Day Air</td>
+                          <td>Alison Smith</td>
+                          <td>Steve Smith</td>
+                          <td>$ <span>12.00</span></td>
+                          <td>
+                            <img
+                              src="assets/images/pending-icon.svg"
+                              alt="pending-icon"
+                            />
+                          </td>
+                          <td>10 - 17 - 2023</td>
+                          <td><span>50</span> LB</td>
+                          <td>
+                            <img
+                              src="assets/images/3dot-icon.svg"
+                              alt="3dot-icon"
+                            />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="order-history-pagination">
+                    <ul
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      <li>
+                        <div class="pagination-arrow">
+                          <img
+                            src="assets/images/chevron-left-icon.svg"
+                            alt="chevron-left-icon"
+                          />
+                        </div>
+                      </li>
+                      <li>01</li>
+                      <li class="active">02</li>
+                      <li>03</li>
+                      <li>04</li>
+                      <li>05</li>
+                      <li>06</li>
+                      <li>
+                        <div class="pagination-arrow">
+                          <img
+                            src="assets/images/chevron-right-icon.svg"
+                            alt="chevron-right-icon"
+                          />
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Order Section HTML End -->
+            </div>
+          </section>
+
+          <!-- Main Content HTML End -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Section HTML End -->
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
